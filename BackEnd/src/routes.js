@@ -3,7 +3,7 @@ const teamsController = require('./controllers/teams.controller');
 
 const routes = express.Router();
 
-routes.post('/teams', teamsController.store);
+routes.post('/teams/insert', teamsController.store);
 routes.get('/teams', teamsController.index);
 
 module.exports = routes;
