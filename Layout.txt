@@ -1,0 +1,6 @@
+ABAS :
+ 1 - selecionar time favorito;
+ 2 - principais jogadores na aba do time;
+	2.1 - clica no jogador abre modal com profile dele;
+ 3 - resultados do dia;
+ 4 - tabela de classificação das divisões;
