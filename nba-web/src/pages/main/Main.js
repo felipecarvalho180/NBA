@@ -1,7 +1,6 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { Switch } from 'react-router-dom';
 
 import SideBar from '../../components/sidebar/SideBar';
 import Routes from '../../routes/Routes';
