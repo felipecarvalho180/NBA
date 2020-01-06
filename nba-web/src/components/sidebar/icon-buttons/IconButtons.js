@@ -1,6 +1,7 @@
 
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { transitions } from 'polished';
 
 import { pointer } from '../../../style/helpers/Helpers';
 import { 
@@ -28,23 +29,45 @@ const Wrapper = styled.div`
   margin-top: 20px;
 `;
 
+const hoverStyle = css`
+  color: red;
+  border: solid 1px red;
+  background-color: white;
+`;
+
 const ICBasketballIcon = styled(BasketballIcon)`
   margin-bottom: 10px;
-  ${ pointer }
+  ${ pointer };
+
+  :hover {
+    ${ hoverStyle };
+  };
 `;
 
 const ICTShirtIcon = styled(TShirtIcon)`
   margin-bottom: 10px;
-  ${ pointer }
+  ${ pointer };
+
+  :hover {
+    ${ hoverStyle }
+  };
 `;
 
 const ICCalendarIcon = styled(CalendarCheckIcon)`
   margin-bottom: 10px;
-  ${ pointer }
+  ${ pointer };
+
+  :hover {
+    ${ hoverStyle }
+  };
 `;
 
 const ICTrophyIcon = styled(TrophyIcon)`
-  ${ pointer }
+  ${ pointer };
+  
+  :hover {
+    ${ hoverStyle }
+  };
 `;
 
 export default IconButtons;
