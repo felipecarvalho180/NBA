@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 // import { Container } from './styles';
 
-export default function teams() {
+export default function standing() {
   return (
     <Wrapper>
-      <h1>Teams</h1>
+      <h1>Classificação</h1>
     </Wrapper>
   );
 }

@@ -22,4 +22,6 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-const ChildWrapper = styled.div``;
+const ChildWrapper = styled.div`
+  width: 100%;
+`;

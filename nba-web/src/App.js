@@ -1,17 +1,17 @@
 
 import React from 'react';
-import styled from 'styled-components';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Main from './pages/main/Main';
 
 function App() {
   return (
-    <Wrapper>
-      <Main />
-    </Wrapper>
+    <BrowserRouter>
+      <Switch>
+        <Route path='/' component={ Main } />
+      </Switch>
+    </BrowserRouter>
   );
 };
-
-const Wrapper = styled.div``;
 
 export default App;

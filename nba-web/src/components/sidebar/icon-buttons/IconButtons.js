@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { transitions } from 'polished';
+import { withRouter } from 'react-router-dom';
 
 import { pointer } from '../../../style/helpers/Helpers';
 import { 
@@ -11,12 +11,14 @@ import {
   TrophyIcon
 } from '../../../style/icons/Icons';
 
-const IconButtons = () => (
+const IconButtons = ({
+  history
+}) => (
   <Wrapper>
-    <ICBasketballIcon />
-    <ICTShirtIcon />
-    <ICCalendarIcon />
-    <ICTrophyIcon />
+    <ICBasketballIcon onClick={ () => history.push('/teams') } />
+    <ICTShirtIcon onClick={ () => history.push('/team') } />
+    <ICCalendarIcon onClick={ () => history.push('/schedule') } />
+    <ICTrophyIcon onClick={ () => history.push('/standing') } />
   </Wrapper>
 );
 
@@ -64,10 +66,10 @@ const ICCalendarIcon = styled(CalendarCheckIcon)`
 
 const ICTrophyIcon = styled(TrophyIcon)`
   ${ pointer };
-  
+
   :hover {
     ${ hoverStyle }
   };
 `;
 
-export default IconButtons;
+export default withRouter(IconButtons);

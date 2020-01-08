@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 // import { Container } from './styles';
 
-export default function teams() {
+export default function schedule() {
   return (
     <Wrapper>
-      <h1>Teams</h1>
+      <h1>Calendario</h1>
     </Wrapper>
   );
 }
