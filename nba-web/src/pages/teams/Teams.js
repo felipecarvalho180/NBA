@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { BLUE, RED, WHITE, BLUE_OPACITY } from '../../style/variables/Variables';
+import { RED, WHITE, BLUE_OPACITY } from '../../style/variables/Variables';
 
 // import { Container } from './styles';
 
