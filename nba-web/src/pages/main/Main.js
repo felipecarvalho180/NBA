@@ -4,10 +4,12 @@ import styled from 'styled-components';
 
 import SideBar from '../../components/sidebar/SideBar';
 import Routes from '../../routes/Routes';
+import GlobalStyle from '../../style/global-style/GlobalStyle';
 
 export default function Main() {
   return (
     <Wrapper>
+      <GlobalStyle />
       <SideBar />
       <ChildWrapper>
         <Routes />

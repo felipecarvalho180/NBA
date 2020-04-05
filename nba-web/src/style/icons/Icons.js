@@ -2,10 +2,10 @@
 import styled, { css } from 'styled-components';
 import { transitions } from 'polished';
 
-import { BasketballBall } from 'styled-icons/fa-solid/BasketballBall';
-import { Tshirt } from 'styled-icons/fa-solid/Tshirt';
-import { CalendarCheck } from 'styled-icons/boxicons-solid/CalendarCheck';
-import { Trophy } from 'styled-icons/fa-solid/Trophy';
+import { BasketballBall } from '@styled-icons/fa-solid/BasketballBall';
+import { Tshirt } from '@styled-icons/fa-solid/Tshirt';
+import { CalendarCheck } from '@styled-icons/boxicons-solid/CalendarCheck';
+import { Trophy } from '@styled-icons/fa-solid/Trophy';
 
 import { WHITE } from '../variables/Variables';
 
